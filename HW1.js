@@ -1,6 +1,7 @@
-zad.1
-
-<script>
+/* zad.1 - Napisać funkcję isSubsting, która sprawdza, czy dany string znajduje się w "glównym stringu". 
+Pierwszy argument bedzie glówny, drugi substring. Przykład:
+isSubsting("Lorem ipsum", "Hello"); // zwróci false, ponieważ "Lorem ipsum" nie zawiera "Hello"
+isSubstring("chce kupic nowa koszulke", "pic") // zwróci true, ponieważ "pic" znajduje się w stringu "..ku*pic* nowa ...." */
 
 function isSubsting() {
 
@@ -9,10 +10,6 @@ var subString = 'ipsum';
 var result = mainString.includes(subString);
 
 alert(result);
-
-}
-
-</script>
 
 //zad.2
 
