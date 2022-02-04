@@ -38,11 +38,12 @@ else
 
 function isSubsting2() {
 
-var mainString = 'Lorem ipsum';
-var subString = 'ipsum';
-var result = mainString.includes(subString);
-
-console.log(result);
+    var mainString = 'Lorem ipsum';
+    var subString = 'Lorem';
+    
+    return mainString.includes(subString);
+}
+      isSubsting2();
 
     /* zad.2 Napisać funkcję elementsInRage, która przyjmuje array liczb, min oraz max. Ma zwrócić array liczb, ktore są w zakresie [min, max] Przyklad:
 elementsInRage([1,2,3,4,5,6,7,8,9,10,11] , 5, 8) // [5, 6, 7, 8] elementsInRage([1,2,2,3,3,8,8,3,3,1,1,4,3,2,10,2], 2, 3) // [2, 2,3,3,3,3,3,2,2] 
