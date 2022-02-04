@@ -66,6 +66,6 @@ to jako drugą wersję na przykład: elementsInRange2 */
         if (array1[i] < min) { min = array2[i]; }
 
         for(let i = min; i <= max; i++){
-            console.log(i);
+            console.log(i);            // ?? zwraca poprawny wynik, ale nie przeszukuje tablicy array1 - nie wiem, jak to zrobić i obudować w funkcję.
     }
 }
