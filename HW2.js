@@ -3,6 +3,20 @@ const arr = [6, 2, 10, 4, 2, -1, 3, 5]
 solution1(arr) // 5
 */
 
+function solution1(arr){
+    let min = arr[0];
+    for (let i = 0; i < arr.length; i++){
+    if (min > arr[i]){
+        min = arr [i];
+        }
+    }
+    return Math.abs(min);
+    console.log(min);
+  }
+  
+  const arr = [6, 2, 10, 4, 2, -1, 3, 5];
+  
+  solution1(arr); // ?? zwraca poprawnie abs najmniejszej wartości, nie wiem jak zrobić, żeby zwracało jego indeks.
 
 /* zad. 2. Funkcja solution2 zwraca ilość dodatnich, ujemnych oraz zer
 const arr = [6, 2, 10, 4, 2, -1, 3, 5]
