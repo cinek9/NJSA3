@@ -10,13 +10,14 @@ function solution1(arr){
         min = arr [i];
         }
     }
-    return Math.abs(min);
-    console.log(min);
+    let abs = Math.abs(min);
+    console.log(abs);
+    return arr.indexOf(min);
   }
   
   const arr = [6, 2, 10, 4, 2, -1, 3, 5];
   
-  solution1(arr); // ?? zwraca poprawnie abs najmniejszej wartości, nie wiem jak zrobić, żeby zwracało jego indeks.
+  solution1(arr);
 
 /* zad. 2. Funkcja solution2 zwraca ilość dodatnich, ujemnych oraz zer
 const arr = [6, 2, 10, 4, 2, -1, 3, 5]
