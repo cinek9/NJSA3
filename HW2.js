@@ -89,13 +89,14 @@ function solution4(text){
     
     
 if (after_dot < before_dot){
-    console.log(firstSentence);
     console.log('First sentence is longer than second sentence');
+    return firstSentence;
+    
 }else {
-    console.log(secondSentence)
     console.log('Second sentence is longer than first sentence');
+    return secondSentence;
+    
 }
-  
 }
 
 const text = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'
