@@ -82,6 +82,24 @@ const text = 'Lorem Ipsum is simply dummy text of the printing and typesetting i
 solution4(text) // 'Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'
 */
 
+function solution4(text){
+    var [firstSentence, secondSentence] = text.split('.');
+    var before_dot= (text.toString().split(".")[0]).length;
+    var after_dot = (text.toString().split(".")[1]).length;
+    
+    
+if (after_dot < before_dot){
+    console.log(firstSentence);
+    console.log('First sentence is longer than second sentence');
+}else {
+    console.log(secondSentence)
+    console.log('Second sentence is longer than first sentence');
+}
+  
+}
+
+const text = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'
+solution4(text);
 
 /* zad. 5. Funkcja przyjmuje text, zwraca najdłuzsze slowo
 const text = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
