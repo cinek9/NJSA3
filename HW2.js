@@ -25,27 +25,24 @@ solution2(arr) // [7, 1, 0]
 */
 
 function solution2(arr){
-    var arr = [6, 2, 10, 4, 2, -1, 3, 5];
     var zeroCount = 0,
       posCount = 0,
       negativeCount = 0;
     arr.forEach((item) => {
-      if (item === 0) {
-        zeroCount++
+      if (item == 0) {
+        console.log("ZeroCount:: " + zeroCount);
+        return zeroCount++
       } else if (item < 0) {
-        negativeCount++
+        console.log("NegativeCount:: " + negativeCount);
+        return negativeCount++
       } else if (item > 0) {
-        posCount++
+        console.log("PositiveCount :: " + posCount);
+        return posCount++
       }
     })
-    
-    console.log("PositiveCount :: " + posCount);
-    console.log("NegativeCount:: " + negativeCount);
-    console.log("ZeroCount:: " + zeroCount);
   }
   
   const arr = [6, 2, 10, 4, 2, -1, 3, 5];
-  
   solution2(arr);
 
 /* zad. 3. Funkcja solution3 zwraca elementy, które są wieksze, niż średnia arytmetyczna.
