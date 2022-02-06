@@ -105,3 +105,20 @@ solution4(text);
 const text = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
 solution4(text) // typesetting
 */
+
+function solution5(text){
+
+        var textSplit = text.split(' ');
+        var word = 0;
+        var longestWord = null;
+        for(var i = 0; i < textSplit.length; i++){
+          if(textSplit[i].length > word){
+          word = textSplit[i].length;
+          longestWord = textSplit[i]
+           }
+        }
+        return longestWord;
+      }
+      
+const text = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+solution5(text);
